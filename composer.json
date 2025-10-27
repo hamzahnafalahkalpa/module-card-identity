@@ -11,13 +11,6 @@
             "email": "hamzahnafalah@gmail.com"
         }
     ],
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Hanafalah\\ModuleCardIdentity\\ModuleCardIdentityServiceProvider"
-            ]
-        }
-    },
     "require": {
         "hanafalah/laravel-support": "dev-main"
     }
