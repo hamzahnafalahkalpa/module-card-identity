@@ -21,6 +21,13 @@ class CardIdentity extends BaseModel
         'value' => 'string'
     ];
 
+    protected static function booted(): void{
+        parent::booted();
+        static::creating(function($query){
+            $query->value = (string) $query->value;
+        });
+    }
+
     public function viewUsingRelation(): array{
         return [];
     }

@@ -12,7 +12,7 @@ trait HasCardIdentity
         'reference_type' => $this->getMorphClass(),
         'flag' => $flag
       ], [
-        'value' => $value
+        'value' => (string) $value
       ]);
     } else {
       return null;
